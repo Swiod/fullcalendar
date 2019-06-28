@@ -222,7 +222,7 @@ export default class TimeGridEventRenderer extends FgEventRenderer {
       } else {
 
         // sort highest pressure first
-        this.sortForwardSegs(forwardSegs)
+        forwardSegs = this.sortForwardSegs(forwardSegs)
 
         // this segment's forwardCoord will be calculated from the backwardCoord of the
         // highest-pressure forward segment.
